@@ -1,0 +1,174 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #2d3e50;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.blog-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.blog-item .button-group {
+  margin-top: 10px;
+}
+
+.blog-item .edit-button {
+  background-color: #ffa000;
+  font-size: 1rem;
+}
+
+.blog-item .edit-button:hover {
+  background-color: #ff8f00;
+}
+
+.blog-item .delete-button {
+  margin-left: 10px;
+  background-color: #f44336;
+  font-size: 1rem;
+}
+
+.blog-item .delete-button:hover {
+  background-color: #e53935;
+}
+
+.create-blog-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.create-blog-form .input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.create-blog-form .input-field:focus {
+  outline-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.create-blog-form .submit-button {
+  background-color: #008CBA;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-blog-form .submit-button:hover {
+  background-color: #007bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .blog-list {
+    gap: 15px;
+  }
+
+  .blog-item {
+    padding: 15px;
+  }
+
+  .create-blog-form .input-field {
+    padding: 8px;
+  }
+
+  .create-blog-form .submit-button {
+    font-size: 0.9rem;
+  }
+
+  .edit-button, .delete-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .blog-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .create-blog-form .submit-button {
+    width: 100%;
+  }
+
+  .blog-item .edit-button, .blog-item .delete-button {
+    width: 100%;
+  }
+}
